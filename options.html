@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head><title>Set Password to Chrome</title>
+
+</head>
+<body>
+
+<p style="color:red;font-size:100%" id="topnote"><i>   </i>   </p>  
+
+<p style="font-size:150%"><i><b> Change Password </b> (Default Password)</i>   </p>   
+
+<p style="color:red;display:none;font-style:italic;font-size:110%" id="note">   </p>
+
+<table>
+
+ <tr>
+ <td>Enter old password: </td> <td><input type="password" id="old" ></td>  </tr>
+  
+<tr>
+<td> Enter new password: </td> <td><input type="password" id="new" ></td>  </tr>
+
+  
+</table>
+
+<br>
+<div id="status"></div>
+<button id="save">Save</button>
+
+<p style="font-size:150%"><i><b> ----------------------------------------------------</b></i></p> 
+<br><br>
+
+
+
+
+<p style="font-size:150%"><i><b> Dynamic Password</b> (optional)</i>  click here to enable / disable <input type="checkbox" id="dp" ></p> 
+
+<div id="contents" style="display:none">
+
+<p style="color:red;display:none;font-style:italic;font-size:110%" id="note1"></p>
+
+<table>
+
+ <tr>
+ <td>Enter master password: </td> <td><input type="password" id="old1" ></td>  </tr></table>
+ 
+<p style="color:green;font-style:italic;font-size:110%" id="note2"> Password will depend upon the current time..You can choose any follwing option to generate password 
+
+<br><br>For example let the current time be 09:45 then minutes : m1= 4 and m2= 5  PLEASE CHECK THE EQUATIONS PROPERLY BEFORE SETTING AND DONT FORGET..
+
+</p>
+ 
+ <table> 
+<tr> 
+<td><input type="radio" name="dyna" value="1" id="esh5"> </td> 
+ <td> m1 + m2 &nbsp;&nbsp;&nbsp; (in this case, passowrd will be 9) </td></tr>
+ 
+<tr> <td><input type="radio" name="dyna" value="2" id="esh6"></td>  <td>  m1 * m2 &nbsp;&nbsp;&nbsp; (in this case, passowrd will be 20)  </td></tr>
+<tr> <td><input type="radio" name="dyna" value="3" id="esh7"></td>  <td>  |m1 - m2| &nbsp;&nbsp;&nbsp; (in this case, passowrd will be |4-5|=1)  </td></tr>
+
+<tr> <td>  <input type="radio" name="dyna" value="4" id="esh1"/>    </td>  <td>  (m1 + m2)+ <input type="text" id="num1" size="2" disabled='disabled' maxlength="3">  &nbsp;&nbsp;&nbsp; (in this case, passowrd will be 9+your num) </td></tr>
+
+<tr> <td><input type="radio" name="dyna" value="5" id="esh2"></td>  <td>  (m1 * m2)+ &nbsp;<input type="text" id="num2" size="2" disabled='disabled' maxlength="3">  &nbsp;&nbsp;&nbsp; (in this case, passowrd will be 20+your num) </td></tr>
+<tr> <td><input type="radio" name="dyna" value="6" id="esh3"></td>  <td>  |m1 - m2|+ &nbsp;<input type="text" id="num3" size="2" disabled='disabled' maxlength="3">  &nbsp;&nbsp;&nbsp; (in this case, passowrd will be 1+your num) </td></tr>
+<tr> <td><input type="radio" name="dyna" value="7" id="esh4"></td>  <td>  (m1 + m2) * <input type="text" id="num4" size="2" disabled='disabled' maxlength="3">  &nbsp;&nbsp;&nbsp; (in this case, passowrd will be 9*your num) </td></tr>
+
+
+  
+</table>
+
+<br>
+<div id="status"></div>
+<button id="save1">Save</button>
+
+</div>
+
+
+<script src="options.js"></script>
+</body>
+</html>
