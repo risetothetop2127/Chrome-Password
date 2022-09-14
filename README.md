@@ -1,8 +1,6 @@
 # Chrome Password
 Chrome password is a Chrome Extension that allows users to add a password to the chrome profile
 
-
-
 ### Description
 This extension will allow users to set password for the browser to avoid unauthorized access. Prompts for password on chrome startup
 This ultra light weight extension will prompt for password on chrome startup which users have to set after installing the extension...
