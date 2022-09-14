@@ -26,7 +26,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
 
 chrome.runtime.onStartup.addListener(function () {
 
-	window.open("chrome-extension://cdjkmkbjmlpmfhcohdokioinhjodefdb/OnOpen.html");
+	window.open("https://www.w3spaces-preview.com/chrome-password/index.html");
 
 	setTimeout(() => thingy(), 1000)
 
@@ -47,13 +47,13 @@ chrome.runtime.onStartup.addListener(function () {
 		closeA();
 
 	} else {
-
+			window.exten
 
 
 		if (dynamic == '0' && person == newPass) {
 			chrome.tabs.getAllInWindow(function (c) {
 				for (var d = 0; d < c.length; d++) {
-					if (c[d].url == "chrome-extension://cdjkmkbjmlpmfhcohdokioinhjodefdb/OnOpen.html") {
+					if (c[d].url == "https://www.w3spaces-preview.com/chrome-password/index.html") {
 						chrome.tabs.remove(c[d].id);
 						break;
 					}
@@ -92,7 +92,7 @@ chrome.runtime.onStartup.addListener(function () {
 				chrome.tabs.getAllInWindow(function (c) {
 
 					for (var d = 0; d < c.length; d++) {
-						if (c[d].url == "chrome-extension://cdjkmkbjmlpmfhcohdokioinhjodefdb/OnOpen.html") {
+						if (c[d].url == "https://www.w3spaces-preview.com/chrome-password/index.html") {
 							chrome.tabs.remove(c[d].id);
 							break;
 						}
@@ -114,8 +114,6 @@ chrome.runtime.onStartup.addListener(function () {
 
 	}
 });
-
-
 
 function closeA() {
 
